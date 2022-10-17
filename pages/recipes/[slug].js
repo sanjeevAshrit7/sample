@@ -30,7 +30,8 @@ const recipeQuery = `*[_type == "recipe" && slug.current == $slug] [0] {
 }`;
 
 export default function OneRecipe({ data }) {
-    const { recipe } = data;
+    // const { recipe } = data;
+    const recipe = data?.recipe
     const [likes, setLikes] = useState(data?.recipe?.likes);
     const router = useRouter();
 
@@ -79,7 +80,7 @@ export default function OneRecipe({ data }) {
                                     <Col>
                                         <h4>Ingridients for {recipe?.name}</h4>
                                         {recipe?.ingridient?.map((ingridient) => {
-                                            console.log('ingridient', ingridient)
+                                            // console.log('ingridient', ingridient)
                                             return (
                                                 <Row css={{ alignItems: 'center', justifyContent: 'flex-start', alignSelf: 'center' }} key={ingridient?._key}>
                                                     {/* <Image src={urlFor(ingridient?.ingrident?.image)} alt={'NA'} height={20} width={30}/> */}
