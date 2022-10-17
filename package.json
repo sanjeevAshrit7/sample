@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.10",
+    "@portabletext/react": "^1.0.6",
+    "@sanity/image-url": "^1.0.1",
     "next": "12.3.1",
+    "next-sanity": "^0.8.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
