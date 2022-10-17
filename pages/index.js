@@ -14,7 +14,7 @@ export default function Home({ recipes }) {
     <div>
       <Head>
         <title>
-          San's Kitchen
+          San s Kitchen
         </title>
       </Head>
       <h1>our recipes</h1>

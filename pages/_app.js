@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
           <Link href='/'>
               <a>
                 <h1>
-                  San's kitchen
+                  San s kitchen
                 </h1>
               </a>
           </Link>
