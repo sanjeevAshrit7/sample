@@ -80,9 +80,9 @@ export default function OneRecipe({ data }) {
                                 <Col>
                                 <h4>Ingridients for {recipe?.name}</h4>
                                 {recipe?.ingridient?.map((ingridient) => {
-                                    // console.log('ingridient',ingridient)
+                                    console.log('ingridient',ingridient)
                                     return (
-                                        <Row css={{alignItems: 'center', justifyContent: 'flex-start', alignSelf: 'center'}}>
+                                        <Row css={{alignItems: 'center', justifyContent: 'flex-start', alignSelf: 'center'}} key={ingridient?._key}>
                                             {/* <Image src={urlFor(ingridient?.ingrident?.image)} alt={'NA'} height={20} width={30}/> */}
                                             <Text h4 css={{}}>
                                             <Image src={urlFor(ingridient?.ingrident?.image)} alt={'NA'} height={20} width={30}/>
